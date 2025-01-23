@@ -52,4 +52,5 @@ jobs:
       run: |
         docker build . -t ${{ secrets.DOCKER_USERNAME }}/flask-pipeline:latest
         docker push ${{ secrets.DOCKER_USERNAME }}/flask-pipeline:latest
+        echo "Docker Image published"
         echo ${{ secrets.DOCKER_USERNAME }}
